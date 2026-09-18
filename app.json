@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "MercadoCar",
+    "slug": "mercadocar-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "com.mercadocar.mobile"
+    },
+    "ios": {
+      "bundleIdentifier": "com.mercadocar.mobile"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "resizeMode": "contain",
+          "backgroundColor": "#FFFFFF"
+        }
+      ]
+    ]
+  }
+}
