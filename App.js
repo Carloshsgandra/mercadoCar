@@ -31,7 +31,7 @@ function IconButton({ icon, onPress, badge, color = COLORS.ink }) {
 }
 
 function AppLogo() {
-  return <View style={styles.logoRow}><View style={styles.logoMark} /><Text style={styles.logoText}>MCCAR</Text></View>;
+  return <View style={styles.logoRow}><Image source={require('./assets/brand/mccar-logo-tech.png')} style={brandStyles.logoImage} /><Text style={styles.logoText}>MCCAR</Text></View>;
 }
 
 function PrimaryButton({ label, onPress, icon, outline = false, disabled = false, style }) {
@@ -285,4 +285,8 @@ const checkoutFlowStyles = StyleSheet.create({
   confirmationTitle: { fontSize: 24, fontWeight: '800', color: COLORS.ink, textAlign: 'center', marginTop: 2 },
   confirmationText: { fontSize: 14, color: COLORS.muted, lineHeight: 20, textAlign: 'center', maxWidth: 290, marginBottom: 8 },
   confirmationCard: { alignSelf: 'stretch', marginBottom: 4 },
+});
+
+const brandStyles = StyleSheet.create({
+  logoImage: { width: 32, height: 32, resizeMode: 'contain' },
 });
