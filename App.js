@@ -31,7 +31,7 @@ function IconButton({ icon, onPress, badge, color = COLORS.ink }) {
 }
 
 function AppLogo() {
-  return <View style={styles.logoRow}><Image source={require('./assets/brand/mccar-logo-tech.png')} style={brandStyles.logoImage} /><Text style={styles.logoText}>MCCAR</Text></View>;
+  return <View style={styles.logoRow}><View style={styles.logoMark}/><Text style={styles.logoText}>MCCAR</Text></View>;
 }
 
 function PrimaryButton({ label, onPress, icon, outline = false, disabled = false, style }) {

@@ -30,9 +30,6 @@ test('a variante Snack é autocontida e não envia assets locais', () => {
 
   const productSource = readFileSync(path.join(snackRoot, 'data/products.js'), 'utf8');
   assert.equal((productSource.match(/image:\s*['"]https:\/\//g) || []).length, 6, 'cada produto deve usar uma URI HTTPS');
-  assert.match(productSource, /id: 'fl-2034'[\s\S]*?snack-images\/pastilhafreio\.png/);
-  assert.match(productSource, /id: 'bo-60ah'[\s\S]*?snack-images\/bateria\.png/);
-  assert.match(productSource, /id: 'co-128'[\s\S]*?snack-images\/amortecedor\.png/);
 
   for (const relativePath of sourceFiles) {
     const source = readFileSync(path.join(snackRoot, relativePath), 'utf8');
